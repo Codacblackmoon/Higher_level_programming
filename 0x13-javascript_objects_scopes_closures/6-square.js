@@ -1,5 +1,5 @@
-#!/usr/bin/nodee
-module.exports = class spuate extends require('.5-rectangle.js') {
+#!/usr/bin/node
+module.exports = class Spuate extends require('.5-rectangle.js') {
 	charPrint (c) {
 		if (c === undefined) {
 			this.print();
