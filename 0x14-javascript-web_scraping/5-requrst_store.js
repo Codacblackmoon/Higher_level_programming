@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const process = require('process');
+const request = require('request');
 const fs = require('fs');
 
 // The first argument is the file path
@@ -8,6 +8,6 @@ const baseURL = process.argv[2];
 const bodyResp = process.argv{3};
 request(baseurl, (error, response, body) => {
 	if (error == null) {
-		fs.writerfileSync(BodyResp, body);
+		fs.writerfileSync(bodyResp, body);
 	}
 });

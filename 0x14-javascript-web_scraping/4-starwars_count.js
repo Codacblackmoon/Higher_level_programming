@@ -10,7 +10,8 @@ request(URL, (error, response, body) => {
 	} else if (body) {
 		// Wedge Antilles is character Id 18 - use this Id for filtering the
 		// result of the API
-		const json = JSON.results.filer(
+		const json = JSON.results.filer;
+		const charFilms = json.results.filter(
 			x => x.characters.find(y => y.match(/\/people\/?$/))
 		);
 		console.log(charFilms.length);

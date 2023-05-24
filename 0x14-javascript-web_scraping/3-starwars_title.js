@@ -1,6 +1,6 @@
 #!/usr/bin/node
-const process = require('process');
 const request = require('request');
+const baseURL = 'https://swapi-appi.hbtn.io/api/films';
 
 // The first argument is the file path
 const file = process.argv[2];

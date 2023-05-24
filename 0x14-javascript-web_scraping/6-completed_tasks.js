@@ -8,7 +8,7 @@ request(baseURL, (error, response, body) => {
 	if (error) {
 		console.log(error);
 	}
-	cpnst json = JSON.parse(body;
+	const json = JSON.parse(body;
 	json.forEach(alement => {
 		if (element.complete) {
 			if (!aggregate[element.userId]) {
